@@ -15,7 +15,7 @@ RUN ./configure --with-mpi=0 \
   		--with-debugging=0 --with-shared-libraries=0 --with-x=0 --with-pic=1 \
   		--download-f2cblaslapack=1 \
   		--download-metis=1 \
-  		--download-superlu=1 \
+  		--download-superlu=https://portal.nersc.gov/project/sparse/superlu/superlu_4.3.tar.gz \
   		--COPTFLAGS="-O2" --CXXOPTFLAGS="-O2" --FOPTFLAGS="-O2"
 RUN make
 
